@@ -1,47 +1,40 @@
-def create_an_empty_array = []
+def create_an_empty_array
+  []
   
 end
 
 def create_an_array 
-  disney_seven_dwarfs = [ "Grumpy" ,  "Sleepy" ,  "Bashful" , "Happy" ]
+ ["yellow", "blue", "purple", "pink"]
 end
 
 def add_element_to_end_of_array(array, element)
- disney_seven_dwarfs = [ "Grumpy" ,  "Sleepy" ,  "Bashful" , "Happy" ]
- disney_seven_dwarfs = << "Sneezy"
+  array << element
 end
 
 def add_element_to_start_of_array(array, element)
-  disney_seven_dwarfs = [ "Grumpy" ,  "Sleepy" ,  "Bashful" , "Happy", "Sneezy"]
-  disney_seven_dwarfs.unshift("Sneezy")
+  array.unshift(element)
 end
 
 def remove_element_from_end_of_array(array)
-  disney_seven_dwarfs = [ "Sneezy", "Grumpy" ,  "Sleepy" ,  "Bashful" , "Happy" ]
-  happy_dwarf = disney_seven_dwarfs.pop
+ array.pop
 end
 
 def remove_element_from_start_of_array(array)
-  disney_seven_dwarfs = [ "Sneezy", "Grumpy" ,  "Sleepy" ,  "Bashful"]
-  sneezy_dwarf = disney_seven_dwarfs.shift
+  array.shift
 end
 
 def retrieve_element_from_index(array, index_number)
-    disney_seven_dwarfs = [  "Grumpy" ,  "Sleepy" ,  "Bashful"]
-    disney_seven_dwarfs[1]
+    array[index_number]
 end
 
 def retrieve_first_element_from_array(array)
-     disney_seven_dwarfs = [  "Grumpy" ,  "Sleepy" ,  "Bashful"]
-     disney_seven_dwarfs.first
+     array.first
 end
 
 def retrieve_last_element_from_array(array)
-   disney_seven_dwarfs = [  "Grumpy" ,  "Sleepy" ,  "Bashful"]
-  disney_seven_dwarfs.last
+    array.last
 end
 
 def update_element_from_index(array, index_number, element)
-   disney_seven_dwarfs = [  "Grumpy" ,  "Sleepy" ,  "Bashful"]
-   disney_seven_dwarfs[1] = "Doc"
+   array[2] = element
 end
