@@ -33,12 +33,12 @@ end
 
 def retrieve_first_element_from_array(array)
      disney_seven_dwarfs = [  "Grumpy" ,  "Sleepy" ,  "Bashful"]
-     disney_seven_dwarfs[0]
+     disney_seven_dwarfs.first
 end
 
 def retrieve_last_element_from_array(array)
    disney_seven_dwarfs = [  "Grumpy" ,  "Sleepy" ,  "Bashful"]
-  disney_seven_dwarfs[2]
+  disney_seven_dwarfs.last
 end
 
 def update_element_from_index(array, index_number, element)
